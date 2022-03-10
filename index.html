@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="Color_Info">background color is: <span id="color"> #242413</span></div>
+        <button id="Change_BG_Color" class="btn btn-change">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            Change BG Color</button>
+        <button id="Open_Color_Palette_Generator" class="btn btn_color_Palette">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+            Color Palette Generator</button>
+    </div>
+
+    <div class="popup" id="Color_Palette_POPUP">
+        <div class="popup_inner Color_Palette_POPUP">
+            <div class="Popup_Header">
+                <h2>Color Palette Generator</h2>
+                <svg id="Close_Color_Palette_POPUP" class="Close_Btn" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </div>
+            <div class="Popup_Content">
+                <ul class="color_palette" id="COLOR_PALETTE"></ul>
+            </div>
+
+            <div class="Popup_Footer">
+                <button id="Generate_Platte" type="button">Generate palette</button>
+                <p>Or just press the “Spacebar” to generate new palettes.</p>
+                <p>Click to copy individual color • Press “C” to copy palette</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./JS/main.js"></script>
+</body>
+</html>
